@@ -27,6 +27,7 @@ mod influxdb;
 mod meilisearch;
 mod mongodb;
 mod postgres;
+mod questdb;
 mod quickwit;
 mod redshift;
 mod s3;
@@ -81,6 +82,9 @@ pub use postgres::{
     PostgresSourceByteaFixture, PostgresSourceCdcFixture, PostgresSourceDeleteFixture,
     PostgresSourceJsonFixture, PostgresSourceJsonbFixture, PostgresSourceMarkFixture,
     PostgresSourceOps,
+};
+pub use questdb::{
+    QuestDbSinkFixture, QuestDbSinkPayloadTimestampFixture, QuestDbSinkTypedFixture,
 };
 pub use quickwit::{QuickwitFixture, QuickwitOps, QuickwitPreCreatedFixture};
 pub use redshift::{
